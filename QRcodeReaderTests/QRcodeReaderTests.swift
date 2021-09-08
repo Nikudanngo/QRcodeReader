@@ -2,7 +2,7 @@
 //  QRcodeReaderTests.swift
 //  QRcodeReaderTests
 //
-//  Created by 遠藤さとる on 2021/09/08.
+//  Created by Nikudanngo on 2021/09/08.
 //
 
 import XCTest
