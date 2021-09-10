@@ -13,6 +13,7 @@
 		2FA5E2FC26E8EACA00EB5B33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5E2FB26E8EACA00EB5B33 /* Preview Assets.xcassets */; };
 		2FA5E30726E8EACA00EB5B33 /* QRcodeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E30626E8EACA00EB5B33 /* QRcodeReaderTests.swift */; };
 		2FA5E31226E8EACA00EB5B33 /* QRcodeReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E31126E8EACA00EB5B33 /* QRcodeReaderUITests.swift */; };
+		2FADD95D26EB9A0F00B670B3 /* bg.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2FADD95C26EB9A0F00B670B3 /* bg.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		2FA5E30D26E8EACA00EB5B33 /* QRcodeReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRcodeReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA5E31126E8EACA00EB5B33 /* QRcodeReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeReaderUITests.swift; sourceTree = "<group>"; };
 		2FA5E31326E8EACA00EB5B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FADD95C26EB9A0F00B670B3 /* bg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bg.svg; path = "../../../../Creative Cloud Files/bg.svg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				2FA5E2F426E8EAC900EB5B33 /* QRcodeReaderApp.swift */,
 				2FA5E2F626E8EAC900EB5B33 /* ContentView.swift */,
 				2FA5E2F826E8EACA00EB5B33 /* Assets.xcassets */,
+				2FADD95C26EB9A0F00B670B3 /* bg.svg */,
 				2FA5E2FD26E8EACA00EB5B33 /* Info.plist */,
 				2FA5E2FA26E8EACA00EB5B33 /* Preview Content */,
 			);
@@ -235,6 +238,7 @@
 			files = (
 				2FA5E2FC26E8EACA00EB5B33 /* Preview Assets.xcassets in Resources */,
 				2FA5E2F926E8EACA00EB5B33 /* Assets.xcassets in Resources */,
+				2FADD95D26EB9A0F00B670B3 /* bg.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
