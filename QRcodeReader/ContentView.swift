@@ -6,29 +6,56 @@
 //
 
 import SwiftUI
-
+// tabBarの各種ページ
+//      Scanページ
 struct ScanView: View {
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color(red: 30/255, green: 144/255, blue: 200/255)
+        ZStack {
+            Image("bg1")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.top)
+            VStack {
+                Text("Scan")
+                    .bold()
+                    .foregroundColor(.white)
             }
-            .navigationTitle("Scan")
         }
     }
 }
-
+//      Createページ
 struct CreateView: View {
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color(red: 30/255, green: 144/255, blue: 100/255)
+        ZStack {
+            Image("bg2")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.top)
+            VStack {
+                Text("Create")
+                    .bold()
+                    .foregroundColor(.white)
             }
-            .navigationTitle("Create")
         }
     }
 }
-
+//      Historyページ
+struct HistorysView: View {
+    var body: some View {
+        ZStack {
+            Image("bg3")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.top)
+            VStack {
+                Text("History")
+                    .bold()
+                    .foregroundColor(.white)
+            }
+        }
+    }
+}
+//      Settingページ
 struct SettingsView: View {
     var body: some View {
         NavigationView {
@@ -39,7 +66,8 @@ struct SettingsView: View {
         }
     }
 }
-
+// TabBarの処理
+//     アイコンを押すとそれぞれのページに変遷
 struct ContentView: View {
     var body: some View {
         TabView {
@@ -53,6 +81,11 @@ struct ContentView: View {
                     Image(systemName: "qrcode")
                     Text("Create")
                 }
+            HistorysView()
+                .tabItem {
+                    Image(systemName: "clock.arrow.circlepath")
+                    Text("History")
+                }
             SettingsView()
                 .tabItem {
                     Image(systemName: "gearshape")
@@ -64,6 +97,12 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .previewDevice("iPhone 12 Pro Max")
+            ContentView()
+                .previewDevice("iPhone 8")
+           
+        }
     }
 }
