@@ -2,7 +2,7 @@
 //  SettingView.swift
 //  QRcodeReader
 //
-//  Created by 遠藤さとる on 2021/09/11.
+//  Created by Nikudanngo on 2021/09/11.
 //
 
 import SwiftUI

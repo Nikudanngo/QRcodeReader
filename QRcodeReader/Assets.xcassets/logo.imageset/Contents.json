@@ -10,7 +10,6 @@
     "version" : 1
   },
   "properties" : {
-    "auto-scaling" : "auto",
     "localizable" : true,
     "preserves-vector-representation" : true
   }
