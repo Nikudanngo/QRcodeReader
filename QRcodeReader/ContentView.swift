@@ -60,7 +60,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(red: 80/255, green: 100/255, blue: 255/255)
+                Color("label")
             }
             .navigationTitle("Setting")
         }
