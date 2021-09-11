@@ -13,6 +13,7 @@
 		2FA5E2FC26E8EACA00EB5B33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5E2FB26E8EACA00EB5B33 /* Preview Assets.xcassets */; };
 		2FA5E30726E8EACA00EB5B33 /* QRcodeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E30626E8EACA00EB5B33 /* QRcodeReaderTests.swift */; };
 		2FA5E31226E8EACA00EB5B33 /* QRcodeReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E31126E8EACA00EB5B33 /* QRcodeReaderUITests.swift */; };
+		2FCBF97C26ECA53600880E7F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF97B26ECA53600880E7F /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		2FA5E30D26E8EACA00EB5B33 /* QRcodeReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRcodeReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA5E31126E8EACA00EB5B33 /* QRcodeReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeReaderUITests.swift; sourceTree = "<group>"; };
 		2FA5E31326E8EACA00EB5B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCBF97B26ECA53600880E7F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				2FA5E2F426E8EAC900EB5B33 /* QRcodeReaderApp.swift */,
 				2FA5E2F626E8EAC900EB5B33 /* ContentView.swift */,
+				2FCBF97B26ECA53600880E7F /* SettingView.swift */,
 				2FA5E2F826E8EACA00EB5B33 /* Assets.xcassets */,
 				2FA5E2FD26E8EACA00EB5B33 /* Info.plist */,
 				2FA5E2FA26E8EACA00EB5B33 /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA5E2F726E8EAC900EB5B33 /* ContentView.swift in Sources */,
+				2FCBF97C26ECA53600880E7F /* SettingView.swift in Sources */,
 				2FA5E2F526E8EAC900EB5B33 /* QRcodeReaderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
