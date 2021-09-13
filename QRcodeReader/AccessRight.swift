@@ -18,16 +18,13 @@ struct AccessRightView: View {
             self.showingPermisionsController = true
         }
         .frame(width: 40, height: 5, alignment: .trailing)
-        
         .padding()
         .sheet(isPresented: $showingPermisionsController) {
             SPPermissionsList(permissions: [.camera,.photoLibrary])
-
         }
     }
     
 }
-
 struct AccessRightView_Previews: PreviewProvider {
     static var previews: some View {
         AccessRightView()
