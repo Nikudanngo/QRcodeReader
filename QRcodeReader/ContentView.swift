@@ -35,18 +35,6 @@ struct CreateView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.top)
-//                .gesture{
-//                    TapGesture()
-//                        .onEnded{ _ in
-//                            UIApplication.shared.sendAction(#selector(UIApplication.resignFirstResponder), to: nil, from: nil, for: nil)
-//                        }
-//                }
-            
-//            VStack {
-//                Text("Create")
-//                    .bold()
-//                    .foregroundColor(.white)
-//            }
                 .onTapGesture {
                     UIApplication.shared.closeKeyboad()
                 }
@@ -88,10 +76,10 @@ struct ContentView: View {
     @State private var selectedTab = 0
     // tabView(引数){}で引数に用意したtagに飛ぶことができるのでこれを利用する
     
-// これでスワイプの感度を確かめる
 //    private func handleSwipe(translation: CGFloat) {
 //        print("handling swipe! horizontal translation was \(translation)")
 //    }
+    // これでスワイプの感度を確かめる
     let minDragTranslationForSwipe: CGFloat = 150 // スワイプの感度を設定
     let numTabs = 4     //タブの上限を設定
     // スワイプを検知するとタブを表示する引数を上下させる
