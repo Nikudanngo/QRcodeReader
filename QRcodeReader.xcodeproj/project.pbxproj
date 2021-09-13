@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		2FA5E30726E8EACA00EB5B33 /* QRcodeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E30626E8EACA00EB5B33 /* QRcodeReaderTests.swift */; };
 		2FA5E31226E8EACA00EB5B33 /* QRcodeReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E31126E8EACA00EB5B33 /* QRcodeReaderUITests.swift */; };
 		2FCBF97C26ECA53600880E7F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF97B26ECA53600880E7F /* SettingView.swift */; };
+		2FCBF97F26EDC0CF00880E7F /* SPPermissionsPhotoLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF97E26EDC0CF00880E7F /* SPPermissionsPhotoLibrary */; };
+		2FCBF98126EDC0CF00880E7F /* SPPermissionsCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF98026EDC0CF00880E7F /* SPPermissionsCamera */; };
+		2FCBF98326EDD6A300880E7F /* AccessRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF98226EDD6A300880E7F /* AccessRight.swift */; };
+		2FCBF98926EDFE3300880E7F /* AccessSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF98826EDFE3300880E7F /* AccessSetting.swift */; };
+		2FCBF98C26EE03B800880E7F /* PermissionsSwiftUIPhoto in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF98B26EE03B800880E7F /* PermissionsSwiftUIPhoto */; };
+		2FCBF98E26EE03B800880E7F /* PermissionsSwiftUICamera in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF98D26EE03B800880E7F /* PermissionsSwiftUICamera */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,8 @@
 		2FA5E31126E8EACA00EB5B33 /* QRcodeReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeReaderUITests.swift; sourceTree = "<group>"; };
 		2FA5E31326E8EACA00EB5B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCBF97B26ECA53600880E7F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		2FCBF98226EDD6A300880E7F /* AccessRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessRight.swift; sourceTree = "<group>"; };
+		2FCBF98826EDFE3300880E7F /* AccessSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCBF98E26EE03B800880E7F /* PermissionsSwiftUICamera in Frameworks */,
+				2FCBF97F26EDC0CF00880E7F /* SPPermissionsPhotoLibrary in Frameworks */,
+				2FCBF98126EDC0CF00880E7F /* SPPermissionsCamera in Frameworks */,
+				2FCBF98C26EE03B800880E7F /* PermissionsSwiftUIPhoto in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +112,8 @@
 				2FA5E2F426E8EAC900EB5B33 /* QRcodeReaderApp.swift */,
 				2FA5E2F626E8EAC900EB5B33 /* ContentView.swift */,
 				2FCBF97B26ECA53600880E7F /* SettingView.swift */,
+				2FCBF98226EDD6A300880E7F /* AccessRight.swift */,
+				2FCBF98826EDFE3300880E7F /* AccessSetting.swift */,
 				2FA5E2F826E8EACA00EB5B33 /* Assets.xcassets */,
 				2FA5E2FD26E8EACA00EB5B33 /* Info.plist */,
 				2FA5E2FA26E8EACA00EB5B33 /* Preview Content */,
@@ -149,6 +163,12 @@
 			dependencies = (
 			);
 			name = QRcodeReader;
+			packageProductDependencies = (
+				2FCBF97E26EDC0CF00880E7F /* SPPermissionsPhotoLibrary */,
+				2FCBF98026EDC0CF00880E7F /* SPPermissionsCamera */,
+				2FCBF98B26EE03B800880E7F /* PermissionsSwiftUIPhoto */,
+				2FCBF98D26EE03B800880E7F /* PermissionsSwiftUICamera */,
+			);
 			productName = QRcodeReader;
 			productReference = 2FA5E2F126E8EAC900EB5B33 /* QRcodeReader.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +240,10 @@
 				Base,
 			);
 			mainGroup = 2FA5E2E826E8EAC900EB5B33;
+			packageReferences = (
+				2FCBF97D26EDC0CF00880E7F /* XCRemoteSwiftPackageReference "SPPermissions" */,
+				2FCBF98A26EE03B800880E7F /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */,
+			);
 			productRefGroup = 2FA5E2F226E8EAC900EB5B33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCBF98326EDD6A300880E7F /* AccessRight.swift in Sources */,
 				2FA5E2F726E8EAC900EB5B33 /* ContentView.swift in Sources */,
+				2FCBF98926EDFE3300880E7F /* AccessSetting.swift in Sources */,
 				2FCBF97C26ECA53600880E7F /* SettingView.swift in Sources */,
 				2FA5E2F526E8EAC900EB5B33 /* QRcodeReaderApp.swift in Sources */,
 			);
@@ -584,6 +610,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FCBF97D26EDC0CF00880E7F /* XCRemoteSwiftPackageReference "SPPermissions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPPermissions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.0;
+			};
+		};
+		2FCBF98A26EE03B800880E7F /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jevonmao/PermissionsSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FCBF97E26EDC0CF00880E7F /* SPPermissionsPhotoLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FCBF97D26EDC0CF00880E7F /* XCRemoteSwiftPackageReference "SPPermissions" */;
+			productName = SPPermissionsPhotoLibrary;
+		};
+		2FCBF98026EDC0CF00880E7F /* SPPermissionsCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FCBF97D26EDC0CF00880E7F /* XCRemoteSwiftPackageReference "SPPermissions" */;
+			productName = SPPermissionsCamera;
+		};
+		2FCBF98B26EE03B800880E7F /* PermissionsSwiftUIPhoto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FCBF98A26EE03B800880E7F /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIPhoto;
+		};
+		2FCBF98D26EE03B800880E7F /* PermissionsSwiftUICamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FCBF98A26EE03B800880E7F /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUICamera;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FA5E2E926E8EAC900EB5B33 /* Project object */;
 }

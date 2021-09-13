@@ -51,5 +51,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>カメラはQRコードを読み込みに使用します</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>ライブラリはQRコードの読み込みに使用します</string>
 </dict>
 </plist>

@@ -7,8 +7,12 @@
 
 import SwiftUI
 // tabBarの各種ページ
-//      Scanページ
 struct ScanView: View {
+    // TabBarの色を白色に設定 これがないと背景の青が少し透けてしまう
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.white
+    }
+//      Scanページ
     var body: some View {
         ZStack {
             Image("bg1")
@@ -77,7 +81,7 @@ struct ContentView: View {
 //    private func handleSwipe(translation: CGFloat) {
 //        print("handling swipe! horizontal translation was \(translation)")
 //    }
-    let minDragTranslationForSwipe: CGFloat = 100 // スワイプの感度を設定
+    let minDragTranslationForSwipe: CGFloat = 150 // スワイプの感度を設定
     let numTabs = 4     //タブの上限を設定
     // スワイプを検知するとタブを表示する引数を上下させる
     private func handleSwipe(translation: CGFloat) {
