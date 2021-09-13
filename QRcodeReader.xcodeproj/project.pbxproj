@@ -17,7 +17,7 @@
 		2FCBF97F26EDC0CF00880E7F /* SPPermissionsPhotoLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF97E26EDC0CF00880E7F /* SPPermissionsPhotoLibrary */; };
 		2FCBF98126EDC0CF00880E7F /* SPPermissionsCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF98026EDC0CF00880E7F /* SPPermissionsCamera */; };
 		2FCBF98326EDD6A300880E7F /* AccessRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF98226EDD6A300880E7F /* AccessRight.swift */; };
-		2FCBF98926EDFE3300880E7F /* AccessSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF98826EDFE3300880E7F /* AccessSetting.swift */; };
+		2FCBF98926EDFE3300880E7F /* AccessSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF98826EDFE3300880E7F /* AccessSettingView.swift */; };
 		2FCBF98C26EE03B800880E7F /* PermissionsSwiftUIPhoto in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF98B26EE03B800880E7F /* PermissionsSwiftUIPhoto */; };
 		2FCBF98E26EE03B800880E7F /* PermissionsSwiftUICamera in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF98D26EE03B800880E7F /* PermissionsSwiftUICamera */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,7 @@
 		2FA5E31326E8EACA00EB5B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCBF97B26ECA53600880E7F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		2FCBF98226EDD6A300880E7F /* AccessRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessRight.swift; sourceTree = "<group>"; };
-		2FCBF98826EDFE3300880E7F /* AccessSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessSetting.swift; sourceTree = "<group>"; };
+		2FCBF98826EDFE3300880E7F /* AccessSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				2FA5E2F626E8EAC900EB5B33 /* ContentView.swift */,
 				2FCBF97B26ECA53600880E7F /* SettingView.swift */,
 				2FCBF98226EDD6A300880E7F /* AccessRight.swift */,
-				2FCBF98826EDFE3300880E7F /* AccessSetting.swift */,
+				2FCBF98826EDFE3300880E7F /* AccessSettingView.swift */,
 				2FA5E2F826E8EACA00EB5B33 /* Assets.xcassets */,
 				2FA5E2FD26E8EACA00EB5B33 /* Info.plist */,
 				2FA5E2FA26E8EACA00EB5B33 /* Preview Content */,
@@ -288,7 +288,7 @@
 			files = (
 				2FCBF98326EDD6A300880E7F /* AccessRight.swift in Sources */,
 				2FA5E2F726E8EAC900EB5B33 /* ContentView.swift in Sources */,
-				2FCBF98926EDFE3300880E7F /* AccessSetting.swift in Sources */,
+				2FCBF98926EDFE3300880E7F /* AccessSettingView.swift in Sources */,
 				2FCBF97C26ECA53600880E7F /* SettingView.swift in Sources */,
 				2FA5E2F526E8EAC900EB5B33 /* QRcodeReaderApp.swift in Sources */,
 			);

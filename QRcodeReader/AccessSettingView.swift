@@ -9,7 +9,7 @@ import SwiftUI
 import PermissionsSwiftUIPhoto
 import PermissionsSwiftUICamera
 
-struct AccessSetting: View {
+struct AccessSettingView: View {
     @State var showModal = false
     var body: some View {
         Button(action: {
@@ -35,8 +35,8 @@ struct AccessSetting: View {
     }
 }
 
-struct AccessSetting_Previews: PreviewProvider {
+struct AccessSettingView_Previews: PreviewProvider {
     static var previews: some View {
-        AccessSetting()
+        AccessSettingView()
     }
 }
