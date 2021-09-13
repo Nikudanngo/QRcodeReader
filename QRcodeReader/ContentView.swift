@@ -35,11 +35,22 @@ struct CreateView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.top)
-            VStack {
-                Text("Create")
-                    .bold()
-                    .foregroundColor(.white)
-            }
+//                .gesture{
+//                    TapGesture()
+//                        .onEnded{ _ in
+//                            UIApplication.shared.sendAction(#selector(UIApplication.resignFirstResponder), to: nil, from: nil, for: nil)
+//                        }
+//                }
+            
+//            VStack {
+//                Text("Create")
+//                    .bold()
+//                    .foregroundColor(.white)
+//            }
+                .onTapGesture {
+                    UIApplication.shared.closeKeyboad()
+                }
+            CreateQRView()
         }
     }
 }

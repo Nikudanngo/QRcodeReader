@@ -20,6 +20,8 @@
 		2FCBF98926EDFE3300880E7F /* AccessSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF98826EDFE3300880E7F /* AccessSettingView.swift */; };
 		2FCBF98C26EE03B800880E7F /* PermissionsSwiftUIPhoto in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF98B26EE03B800880E7F /* PermissionsSwiftUIPhoto */; };
 		2FCBF98E26EE03B800880E7F /* PermissionsSwiftUICamera in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCBF98D26EE03B800880E7F /* PermissionsSwiftUICamera */; };
+		2FCBF99626EF2C7700880E7F /* CreateQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF99526EF2C7700880E7F /* CreateQRView.swift */; };
+		2FCBF99826EF3D3500880E7F /* QRmaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF99726EF3D3500880E7F /* QRmaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		2FCBF97B26ECA53600880E7F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		2FCBF98226EDD6A300880E7F /* AccessRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessRight.swift; sourceTree = "<group>"; };
 		2FCBF98826EDFE3300880E7F /* AccessSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessSettingView.swift; sourceTree = "<group>"; };
+		2FCBF99526EF2C7700880E7F /* CreateQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQRView.swift; sourceTree = "<group>"; };
+		2FCBF99726EF3D3500880E7F /* QRmaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRmaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				2FA5E2F626E8EAC900EB5B33 /* ContentView.swift */,
 				2FCBF97B26ECA53600880E7F /* SettingView.swift */,
 				2FCBF98226EDD6A300880E7F /* AccessRight.swift */,
+				2FCBF99526EF2C7700880E7F /* CreateQRView.swift */,
+				2FCBF99726EF3D3500880E7F /* QRmaker.swift */,
 				2FCBF98826EDFE3300880E7F /* AccessSettingView.swift */,
 				2FA5E2F826E8EACA00EB5B33 /* Assets.xcassets */,
 				2FA5E2FD26E8EACA00EB5B33 /* Info.plist */,
@@ -289,8 +295,10 @@
 				2FCBF98326EDD6A300880E7F /* AccessRight.swift in Sources */,
 				2FA5E2F726E8EAC900EB5B33 /* ContentView.swift in Sources */,
 				2FCBF98926EDFE3300880E7F /* AccessSettingView.swift in Sources */,
+				2FCBF99626EF2C7700880E7F /* CreateQRView.swift in Sources */,
 				2FCBF97C26ECA53600880E7F /* SettingView.swift in Sources */,
 				2FA5E2F526E8EAC900EB5B33 /* QRcodeReaderApp.swift in Sources */,
+				2FCBF99826EF3D3500880E7F /* QRmaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
