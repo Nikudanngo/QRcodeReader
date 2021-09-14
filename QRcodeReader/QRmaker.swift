@@ -36,7 +36,7 @@ class QRCodeMaker: NSObject {
     }
     
 }
-// 共有するためのクラス
+// 共有するためのviewクラス
 struct ActivityView: UIViewControllerRepresentable {
 
     let activityItems: [Any]
