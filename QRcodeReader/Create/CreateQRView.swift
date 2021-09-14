@@ -62,23 +62,34 @@ struct CreateQRView: View {
                                         .stroke(Color.black, lineWidth: 3)
                                 )
                                 .opacity(0.4)
-                Button(action: {
-                                self.qrImage = self._QRCodeMaker.make(message: self.string, level: self.correctionLevel)
-                                UIApplication.shared.closeKeyboad() //作成ボタン押すとキーボードをしまう
-                            }) {
-                                Text("作成")
-                                    .bold()
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .background(Color(red: 44/225, green: 61/225 , blue: 10/225))
-                                    .clipShape(Capsule())
-                     }
-                .padding()
+                VStack {
+                    Button(action: {
+                        string = ""
+                        qrImage = nil
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .font(.title)
+                            .padding()
+                            .foregroundColor(.white)
+                    })
+                    Button(action: {
+                                    self.qrImage = self._QRCodeMaker.make(message: self.string, level: self.correctionLevel)
+                                    UIApplication.shared.closeKeyboad() //作成ボタン押すとキーボードをしまう
+                                }) {
+                                    Text("作成")
+                                        .bold()
+                                        .foregroundColor(.white)
+                                        .padding()
+                                        .background(Color(red: 44/225, green: 61/225 , blue: 10/225))
+                                        .clipShape(Capsule())
+                         }
+                }
+                Spacer()
             }
             HStack {
                 //　左寄寄せするならこれ↓
 //                Spacer()
-                // 画像がないのに共有するとerror出るからqr生成前には隠しておく
+                // 画像がないのに共有、保存するとerror出るからqr生成前には隠しておく
                 if qrImage != nil {
                     Button(action: {
                             self.showActivityView = true
@@ -94,9 +105,6 @@ struct CreateQRView: View {
                                 applicationActivities: nil
                             )
                         }
-                }
-                // 画像がないのに保存するとerror出るからqr生成前には隠しておく
-                if qrImage != nil {
                     Button(action: {
                         ImageSaver($showAlert).writeToPhotoAlbum(image: qrImage!)
                               }){
@@ -113,7 +121,7 @@ struct CreateQRView: View {
                                     }))
                               }
                 }
-                }
+            }
             Spacer()
         }
     }
