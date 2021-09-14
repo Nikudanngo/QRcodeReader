@@ -36,6 +36,9 @@ struct CreateQRView: View {
         private var _QRCodeMaker = QRCodeMaker()
         @State var showAlert = false
         @State private var showActivityView: Bool = false
+    @State private var rect: CGRect = .zero
+    @State private var uiImage: UIImage? = nil
+    @State private var showShareSheet = false
 
     var body: some View {
         VStack{
@@ -67,6 +70,7 @@ struct CreateQRView: View {
                         Image(systemName: "square.and.arrow.up")
                             .font(.title)
                             .padding()
+                            .foregroundColor(.white)
                     }
                     .sheet(isPresented: self.$showActivityView) {
                         ActivityView(
@@ -74,13 +78,13 @@ struct CreateQRView: View {
                             applicationActivities: nil
                         )
                     }
-            
                 Button(action: {
                     ImageSaver($showAlert).writeToPhotoAlbum(image: qrImage!)
                           }){
                               Image(systemName: "square.and.arrow.down")
                                 .font(.title)
                                 .padding()
+                                .foregroundColor(.white)
                           }.alert(isPresented: $showAlert) {
                             Alert(
                                 title: Text("画像を保存しました。"),
