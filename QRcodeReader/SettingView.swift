@@ -27,13 +27,11 @@ struct SettingsView: View {
                 Section(header: Text("アップグレードする")) {
                     HStack {
                         Picker(selection: $pickerSelection, label: Text("プレミアムへ")) {
-                            ForEach(0..<self.languages.count) { index in
-//                                Text(self.languages[index])
-                            }
+                            
                         }
                     }
                     HStack {
-                        Picker(selection: $pickerSelection, label: Text("Language")) {
+                        Picker(selection: $pickerSelection, label: Text("言語")) {
                             ForEach(0..<self.languages.count) { index in
                                 Text(self.languages[index])
                             }

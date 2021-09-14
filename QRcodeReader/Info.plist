@@ -55,5 +55,7 @@
 	<string>カメラはQRコードを読み込みに使用します</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>ライブラリはQRコードの読み込みに使用します</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>QRコードの保存に使用します</string>
 </dict>
 </plist>

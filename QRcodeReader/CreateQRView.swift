@@ -2,10 +2,31 @@
 //  CreateQRView.swift
 //  QRcodeReader
 //
-//  Created by 遠藤さとる on 2021/09/13.
+//  Created by Nikudanngo on 2021/09/13.
 //
 
 import SwiftUI
+
+class ImageSaver: NSObject {
+    @Binding var showAlert: Bool
+    
+    init(_ showAlert: Binding<Bool>) {
+        _showAlert = showAlert
+    }
+    
+    func writeToPhotoAlbum(image: UIImage) {
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(didFinishSavingImage), nil)
+    }
+
+    @objc func didFinishSavingImage(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        
+        if error != nil {
+            print("保存に失敗しました。")
+        } else {
+            showAlert = true
+        }
+    }
+}
 
 
 struct CreateQRView: View {
@@ -13,7 +34,9 @@ struct CreateQRView: View {
         @State var correctionLevel = 0
         @State var qrImage:UIImage?
         private var _QRCodeMaker = QRCodeMaker()
-    
+        @State var showAlert = false
+        @State private var showActivityView: Bool = false
+
     var body: some View {
         VStack{
             Spacer()
@@ -36,7 +59,37 @@ struct CreateQRView: View {
                      }
                 .padding()
             }
-//            .frame(alignment: .leading)
+            HStack {
+                Spacer()
+                Button(action: {
+                        self.showActivityView = true
+                    }) {
+                        Image(systemName: "square.and.arrow.up")
+                            .font(.title)
+                            .padding()
+                    }
+                    .sheet(isPresented: self.$showActivityView) {
+                        ActivityView(
+                            activityItems: [qrImage!],
+                            applicationActivities: nil
+                        )
+                    }
+            
+                Button(action: {
+                    ImageSaver($showAlert).writeToPhotoAlbum(image: qrImage!)
+                          }){
+                              Image(systemName: "square.and.arrow.down")
+                                .font(.title)
+                                .padding()
+                          }.alert(isPresented: $showAlert) {
+                            Alert(
+                                title: Text("画像を保存しました。"),
+                                message: Text(""),
+                                dismissButton: .default(Text("OK"), action: {
+                                    showAlert = false
+                                }))
+                          }
+            }
             Spacer()
         }
     }
