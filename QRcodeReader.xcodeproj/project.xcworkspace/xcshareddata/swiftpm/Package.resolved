@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CodeScanner",
+        "repositoryURL": "https://github.com/twostraws/CodeScanner",
+        "state": {
+          "branch": null,
+          "revision": "a2144ddaa7c43a6ee00873edd4cc7815ad97942f",
+          "version": "1.0.7"
+        }
+      },
+      {
+        "package": "PermissionsSwiftUI",
+        "repositoryURL": "https://github.com/jevonmao/PermissionsSwiftUI",
+        "state": {
+          "branch": null,
+          "revision": "91c75340567793d9737aa16a9b0f4044db1f87cf",
+          "version": "1.5.4"
+        }
+      },
+      {
+        "package": "SPPermissions",
+        "repositoryURL": "https://github.com/ivanvorobei/SPPermissions",
+        "state": {
+          "branch": null,
+          "revision": "f43145ec7b4c3793d6749dc86f7749896958e358",
+          "version": "6.7.0"
+        }
+      },
+      {
+        "package": "Introspect",
+        "repositoryURL": "https://github.com/siteline/SwiftUI-Introspect",
+        "state": {
+          "branch": null,
+          "revision": "2e09be8af614401bc9f87d40093ec19ce56ccaf2",
+          "version": "0.1.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
