@@ -19,11 +19,7 @@ struct ScanView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.top)
-            VStack {
-                Text("Scan")
-                    .bold()
-                    .foregroundColor(.white)
-            }
+            ScanQRView()
         }
     }
 }
