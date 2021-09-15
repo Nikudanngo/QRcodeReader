@@ -29,6 +29,7 @@
 		2FCBF9AE26F1CCB200880E7F /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF9AD26F1CCB200880E7F /* QrCodeScannerView.swift */; };
 		2FCBF9B026F1CCFD00880E7F /* ScanQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF9AF26F1CCFD00880E7F /* ScanQRView.swift */; };
 		2FCBF9B226F1CD7C00880E7F /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF9B126F1CD7C00880E7F /* SecondView.swift */; };
+		2FCBF9B626F1D3A500880E7F /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCBF9B526F1D3A500880E7F /* ScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		2FCBF9AD26F1CCB200880E7F /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QrCodeScannerView.swift; path = ../../../../QrCodeScannerView.swift; sourceTree = "<group>"; };
 		2FCBF9AF26F1CCFD00880E7F /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScanQRView.swift; path = ../../../../ScanQRView.swift; sourceTree = "<group>"; };
 		2FCBF9B126F1CD7C00880E7F /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondView.swift; path = ../../../../SecondView.swift; sourceTree = "<group>"; };
+		2FCBF9B526F1D3A500880E7F /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				2FCBF9A726F1CB2300880E7F /* ScannerViewModel.swift */,
+				2FCBF9B526F1D3A500880E7F /* ScannerViewModel.swift */,
 				2FCBF9A926F1CC7200880E7F /* QrCodeCameraDelegate.swift */,
 				2FCBF9AB26F1CC9400880E7F /* CameraPreview.swift */,
 				2FCBF9AD26F1CCB200880E7F /* QrCodeScannerView.swift */,
@@ -345,6 +348,7 @@
 				2FCBF97C26ECA53600880E7F /* SettingView.swift in Sources */,
 				2FCBF9AC26F1CC9400880E7F /* CameraPreview.swift in Sources */,
 				2FCBF9B026F1CCFD00880E7F /* ScanQRView.swift in Sources */,
+				2FCBF9B626F1D3A500880E7F /* ScannerViewModel.swift in Sources */,
 				2FA5E2F526E8EAC900EB5B33 /* QRcodeReaderApp.swift in Sources */,
 				2FCBF9AE26F1CCB200880E7F /* QrCodeScannerView.swift in Sources */,
 				2FCBF9AA26F1CC7200880E7F /* QrCodeCameraDelegate.swift in Sources */,
